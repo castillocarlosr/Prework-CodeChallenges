@@ -48,12 +48,14 @@ namespace CodeChallenges
                 SumofRows();
                 return true;
             }
-            else if((result == "5") || (Console.ReadKey().Key == ConsoleKey.Escape))
+            //else if((result == "5") || (Console.ReadKey().Key == ConsoleKey.Escape))
+            else if (result == "5")
             {
                 return false;
             }
             else
             {
+                OtherKeyPressed();
                 return true;
             }
         }
@@ -82,17 +84,27 @@ namespace CodeChallenges
             string result5 = Console.ReadLine();
             userList.Add(result5);
 
+            foreach (var i in userList)Console.WriteLine(i);
+            /*
             Console.WriteLine(userList[0]);
             Console.WriteLine(userList[1]);
             Console.WriteLine(userList[2]);
             Console.WriteLine(userList[3]);
             Console.WriteLine(userList[4]);
-
-            //Console.ReadKey();
-
-            Console.Write("Choose a \"score\" number: ");
+            */
+            Console.Write("Choose number from the list: ");
+            string score = Console.ReadLine();
+            Console.WriteLine(score);
+            Console.Write("Press Enter or Return to count frequency");
             Console.ReadLine();
-            Console.ReadKey();
+
+            foreach (var i in userList)
+            {
+                if (score = userList[i])
+                {
+
+                }
+            }
         }
 
         private static void LeapYearCalculator()
@@ -116,6 +128,13 @@ namespace CodeChallenges
             //Write in some code block here -love carlos
             Console.Clear();
             Console.WriteLine("Test code 4.  Yup, this is only a test");
+            Console.ReadLine();
+        }
+
+        private static void OtherKeyPressed()
+        {
+            Console.Clear();
+            Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, 3, 4, or 5.");
             Console.ReadLine();
         }
 
