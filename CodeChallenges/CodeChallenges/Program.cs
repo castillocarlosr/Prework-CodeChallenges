@@ -88,6 +88,10 @@ namespace CodeChallenges
             Console.WriteLine(userList[3]);
             Console.WriteLine(userList[4]);
 
+            //Console.ReadKey();
+
+            Console.Write("Choose a \"score\" number: ");
+            Console.ReadLine();
             Console.ReadKey();
         }
 
