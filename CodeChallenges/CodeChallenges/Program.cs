@@ -21,7 +21,8 @@ namespace CodeChallenges
         private static bool MainMenu()
         {
             Console.Clear();
-            Console.WriteLine("Code Challenges Program.  Choose a number problem.........");
+            Console.WriteLine("Code Challenges Program.  Choose a number problem.");
+            Console.WriteLine("   ");
             Console.WriteLine("1) Problem 1: Array Max Result");
             Console.WriteLine("2) Problem 2: Leap Year Calculator");
             Console.WriteLine("3) Problem 3: Perfect Sequence");
@@ -62,49 +63,44 @@ namespace CodeChallenges
 
         private static void ArrayMaxResult()
         {
-            //Write in some code block here -love carlos
             Console.Clear();
             Console.WriteLine("Problem 1: Array Max Result");
             Console.WriteLine("Choose 5 numbers between 1-10");
-            ArrayList userList = new ArrayList();
+            //ArrayList userList = new ArrayList();
+            List<int> userList = new List<int>();
+            //int[]userList = new int[5];
 
+            Console.WriteLine("   ");
             Console.Write("Choose the first number:  ");
             string result = Console.ReadLine();
-            userList.Add(result);
+            userList.Add(int.Parse(result));
             Console.Write("Choose the second number: ");
             string result2 = Console.ReadLine();
-            userList.Add(result2);
+            userList.Add(int.Parse(result2));
             Console.Write("Choose the third number:  ");
             string result3 = Console.ReadLine();
-            userList.Add(result3);
+            userList.Add(int.Parse(result3));
             Console.Write("Choose the forth number:  ");
             string result4 = Console.ReadLine();
-            userList.Add(result4);
+            userList.Add(int.Parse(result4));
             Console.Write("Choose the fifth number:  ");
             string result5 = Console.ReadLine();
-            userList.Add(result5);
-
-            foreach (var i in userList)Console.WriteLine(i);
-            /*
-            Console.WriteLine(userList[0]);
-            Console.WriteLine(userList[1]);
-            Console.WriteLine(userList[2]);
-            Console.WriteLine(userList[3]);
-            Console.WriteLine(userList[4]);
-            */
-            Console.Write("Choose number from the list: ");
+            userList.Add(int.Parse(result5));
+            
+            Console.Write($"Choose number from the list: [{userList[0]}, {userList[1]}, {userList[2]}, {userList[3]}, {userList[4]}]:  ");
             string score = Console.ReadLine();
-            Console.WriteLine(score);
-            Console.Write("Press Enter or Return to count frequency");
-            Console.ReadLine();
-
-            foreach (var i in userList)
+            
+            int i = 0;
+            int frequency = 0;
+            for(i = 0; i<userList.Count; i++)
             {
-                if (score = userList[i])
-                {
-
-                }
+                if (int.Parse(score) == userList[i])
+                    ++frequency;
             }
+            int solution1 = frequency * int.Parse(score);
+            Console.WriteLine($"Score:  {solution1}");
+            Console.ReadLine();
+            /* Problem 1 works.  Code block finished on Dec. 10 by Carlos Castillo */
         }
 
         private static void LeapYearCalculator()
