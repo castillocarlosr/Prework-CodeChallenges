@@ -105,9 +105,26 @@ namespace CodeChallenges
 
         private static void LeapYearCalculator()
         {
-            //Write in some code block here -love carlos
             Console.Clear();
-            Console.WriteLine("Test code 2.  Yup, this is only a test");
+            Console.WriteLine("Problem 2: Leap Year Calculator.");
+            Console.WriteLine(" ");
+            Console.Write("Choose a year:  ");
+            int userYear = int.Parse(Console.ReadLine());
+
+            if ((userYear % 400) == 0)
+            {
+                Console.WriteLine($"The year {userYear} is a leap year!");
+            }
+            else if ((userYear % 100) == 0)
+            {
+                Console.WriteLine($"The year {userYear} is NOT a leap year.");
+            }
+            else if ((userYear % 4) == 0)
+            {
+                Console.WriteLine($"The year {userYear} is a leap year!");
+            }
+            else
+                Console.WriteLine($"The year {userYear} is NOT a leap year.");
             Console.ReadLine();
         }
 
