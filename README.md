@@ -24,7 +24,7 @@ E.g for [2,2,3,5,4] if you pick 2 your score will be "4" (2 * 2).  But if you pi
 12
 
 ##### Screen capture of successful output. 
-
+![](ScreenShots/Capture1.PNG?raw=true)
 
 
 <hr />
@@ -51,7 +51,7 @@ The console will display the year the user entered and whether it is a leap year
 The year 2000 is a leap year!
 
 ##### Screen capture of successful output.
-
+![](ScreenShots/Capture2.png)
 
 
 <hr />
