@@ -126,6 +126,7 @@ namespace CodeChallenges
             else
                 Console.WriteLine($"The year {userYear} is NOT a leap year.");
             Console.ReadLine();
+            /* Problem 2 works.  Code block finished on Dec. 11 by Carlos Castillo */
         }
 
         private static void PerfectSequence()

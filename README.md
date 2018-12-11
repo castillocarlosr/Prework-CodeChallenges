@@ -51,7 +51,7 @@ The console will display the year the user entered and whether it is a leap year
 The year 2000 is a leap year!
 
 ##### Screen capture of successful output.
-![](ScreenShots/Capture2.png?raw=true)
+![](ScreenShots/Capture2.PNG?raw=true)
 
 
 <hr />
