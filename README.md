@@ -11,10 +11,10 @@ file. Utilize the `Main()` method to call each challenge method, you may create 
 Given an array select a number that exists, and output the computated "score". The method will take in both an array of integers and the integer "you" the user selected.
 
 The console will ask you "the user" for 5 numbers between 1-10.  Press enter when done.
-The console will now ask the user for another number.  Just one.  Press enter.
+The console will now ask the user for another number from the list.  Press enter.
 
 #### Selection and Scoring Algorithm
-The scoring will be depend on the frequency of the last number the user selected and check the frequency of the number to the list of the first 5 numbers the user selected. 
+The scoring will be depend on the frequency of the number the user selected and check the frequency of that number to the list of the first 5 numbers the user selected. 
 E.g for [2,2,3,5,4] if you pick 2 your score will be "4" (2 * 2).  But if you pick 5 your score will be "5" (5 * 1).
 
 #### Sample Input
@@ -32,28 +32,27 @@ E.g for [2,2,3,5,4] if you pick 2 your score will be "4" (2 * 2).  But if you pi
 ## Problem 2: Leap Year Calculator
 
 #### Problem Statement
-Given a year, report if it is a leap year.
+Given a year, the output report will calculate if it is a leap year.
 
-The tricky thing here is that a leap year in the Gregorian calendar occurs:
-
+Leap years in the Gregorian calendar occurs as follows:
 ```
 on every year that is evenly divisible by 4
   except every year that is evenly divisible by 100
     unless the year is also evenly divisible by 400
-
 ```
 
-For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
+The console will ask "the user" to enter a year.  Press enter when done.
+The console will display the year the user entered and whether it is a leap year or not.
 
-Want to know more about Leap Year? Watch this 4 minute video [HERE](https://www.youtube.com/watch?v=xX96xng7sAE)
+#### Sample Input
+2000
 
-Note: This is not a trick problem. Edge cases do not need to be taken into consideration when creating a solution.
+#### Sample Output
+The year 2000 is a leap year!
 
-#### Readme
-A section of your readme should contain basic information outlining the requirements for the challenge
-1. Name of Challenge
-2. Instructions of Challenge
-3. Screen capture of successful output. 
+##### Screen capture of successful output.
+
+
 
 <hr />
 
