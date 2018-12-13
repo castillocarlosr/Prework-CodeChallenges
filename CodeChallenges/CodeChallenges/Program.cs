@@ -128,15 +128,21 @@ namespace CodeChallenges
             Console.ReadLine();
             /* Problem 2 works.  Code block finished on Dec. 11 by Carlos Castillo */
         }
-
+        
         private static void PerfectSequence()
         {
             //Write in some code block here -love carlos
             Console.Clear();
-            Console.WriteLine("Test code 3.  Yup, this is only a test");
-            Console.ReadLine();
-        }
+            Console.WriteLine("Problem 3: Perfect Sequence.");
+            Console.WriteLine(" ");
+            //List<int> userSequence = new List<int>();
 
+            Console.Write("Choose 2 to 10 numbers seperated by a space or comma:  ");
+            //string result5 = Console.ReadLine();
+            //userList.Add(int.Parse(result5));
+            //int userSequence = int.Parse(Console.ReadLine());
+        }
+        
         private static void SumofRows()
         {
             //Write in some code block here -love carlos
