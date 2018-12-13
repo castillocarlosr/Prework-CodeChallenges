@@ -135,12 +135,14 @@ namespace CodeChallenges
             Console.Clear();
             Console.WriteLine("Problem 3: Perfect Sequence.");
             Console.WriteLine(" ");
-            //List<int> userSequence = new List<int>();
+            List<int> userSequence = new List<int>();
 
-            Console.Write("Choose 2 to 10 numbers seperated by a space or comma:  ");
+            Console.Write("How many numbers do you want to enter?  ");
+            
             //string result5 = Console.ReadLine();
             //userList.Add(int.Parse(result5));
             //int userSequence = int.Parse(Console.ReadLine());
+
         }
         
         private static void SumofRows()
