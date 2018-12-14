@@ -131,13 +131,40 @@ namespace CodeChallenges
         
         private static void PerfectSequence()
         {
-            //Write in some code block here -love carlos
             Console.Clear();
             Console.WriteLine("Problem 3: Perfect Sequence.");
-            Console.WriteLine(" ");
             List<int> userSequence = new List<int>();
 
+            Console.WriteLine(" ");
+            Console.Write("Enter the first interger: ");
+            string input = Console.ReadLine();
+            int typed = int.Parse(input);
+            userSequence.Add(typed);
+
+            while (input != "")
+            {
+                Console.Write("Please enter another integer or press ENTER when done:  ");
+                input = Console.ReadLine();
+                //userSequence.Add(int.Parse(input));
+                userSequence.Add(typed);
+            }
+            if (input == "")
+            {
+                Console.WriteLine("The numer enter is " + userSequence<int>);
+                Console.ReadLine();
+                
+            }
+            /*
             Console.Write("How many numbers do you want to enter?  ");
+            Console.WriteLine(" ");
+            Console.WriteLine("Choose 2 to 9 array numbers for now.");
+            Console.ReadLine();
+            
+            Console.Write(@"Enter a sequence of numbers 
+seperated by a space between each number:  ");
+*/
+            //int[] n = { 4, 9, 9, 4 }; 
+            //int userSequence[] = new int[] {'n'};
             
             //string result5 = Console.ReadLine();
             //userList.Add(int.Parse(result5));
