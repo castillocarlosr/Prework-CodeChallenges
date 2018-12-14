@@ -74,7 +74,7 @@ A perfect sequence is a sequence such that all of its elements are non-negative 
 For example: [2,2], [1,3,2] and [0,0,0,0] are perfect sequences and [4,5,6] and [0,2,-2] are not perfect sequences. Negative numbers of any kind are not valid in a perfect sequence.
 #### Explanation
 1 * 3 * 2 = 6 && 1 + 3 + 2 = 6
-4 * 5 = 20 && 4 + 5 = 9
+<br />4 * 5 = 20 && 4 + 5 = 9
 
 #### Sample Input
 [1,3,2]
