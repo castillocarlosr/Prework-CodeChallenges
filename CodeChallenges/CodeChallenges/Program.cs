@@ -139,22 +139,40 @@ namespace CodeChallenges
             Console.Write("Enter the first interger: ");
             string input = Console.ReadLine();
             //while (input != "")
-            //if (input == "")
             while (!string.IsNullOrEmpty(input))
             {
                 userSequence.Add(int.Parse(input));
                 Console.Write("Please enter another integer or press ENTER when done:  ");
                 input = Console.ReadLine();
             }
+            //if (input == "")
             if (string.IsNullOrEmpty(input))
             {
                 Console.WriteLine("");
                 Console.WriteLine("The numbers you entered are: [" + string.Join(", ", userSequence) + "]");
-                Console.WriteLine("Press ENTER for Perfect Sequence check");
+                int product = 1;
+                int sum = 0;
+                for (int j =0; j<userSequence.Count; j++)
+                {
+                    product *= userSequence[j];
+                    sum += userSequence[j];
+
+                }
+                    if(sum == product)
+                    {
+                        Console.WriteLine("YES.  Perfect sequence.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("NO.  Not a perfect sequence.");
+                        //Console.WriteLine($"sum: {sum}");
+                        //Console.WriteLine($"product: {product}");
+                    }
                 Console.ReadLine();
             }
+            /* Problem 3 works.  Code block finished on Dec. 13 by Carlos Castillo */
         }
-        
+
         private static void SumofRows()
         {
             //Write in some code block here -love carlos
