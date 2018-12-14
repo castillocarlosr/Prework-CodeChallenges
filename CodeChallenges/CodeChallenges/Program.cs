@@ -138,51 +138,21 @@ namespace CodeChallenges
             Console.WriteLine(" ");
             Console.Write("Enter the first interger: ");
             string input = Console.ReadLine();
-            userSequence.Add(int.Parse(input));
             //while (input != "")
+            //if (input == "")
             while (!string.IsNullOrEmpty(input))
             {
+                userSequence.Add(int.Parse(input));
                 Console.Write("Please enter another integer or press ENTER when done:  ");
                 input = Console.ReadLine();
-                int value;
-                if(!int.TryParse(input, out value))
-                {
-                    Console.WriteLine("Something went wrong.  Did you type in a number?");
-                    Console.ReadLine();
-                }
-                else
-                {
-                    userSequence.Add(value);
-                }
-                //userSequence.Add(int.TryParse(input, out value));
-                //userSequence.Add(int.Parse(input));
             }
-            if (input == "")
+            if (string.IsNullOrEmpty(input))
             {
-                //int sum = 0;
-                foreach (int value in userSequence)
-                {
-                    //sum += value;
-                    Console.WriteLine("The numbers entered are" + value.ToString() + " cool");
-                }
+                Console.WriteLine("");
+                Console.WriteLine("The numbers you entered are: [" + string.Join(", ", userSequence) + "]");
+                Console.WriteLine("Press ENTER for Perfect Sequence check");
                 Console.ReadLine();
             }
-            /*
-            Console.Write("How many numbers do you want to enter?  ");
-            Console.WriteLine(" ");
-            Console.WriteLine("Choose 2 to 9 array numbers for now.");
-            Console.ReadLine();
-            
-            Console.Write(@"Enter a sequence of numbers 
-seperated by a space between each number:  ");
-*/
-            //int[] n = { 4, 9, 9, 4 }; 
-            //int userSequence[] = new int[] {'n'};
-            
-            //string result5 = Console.ReadLine();
-            //userList.Add(int.Parse(result5));
-            //int userSequence = int.Parse(Console.ReadLine());
-
         }
         
         private static void SumofRows()
