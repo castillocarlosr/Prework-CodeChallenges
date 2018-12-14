@@ -51,7 +51,9 @@ The console will display the year the user entered and whether it is a leap year
 The year 2000 is a leap year!
 
 ##### Screen capture of successful output.
-![](ScreenShots/Capture2.PNG?raw=true)
+<!-- ![](ScreenShots/Capture2.PNG?raw=true) -->
+![](ScreenShots/Capture2_1.PNG?raw=true)
+![](ScreenShots/Capture2_2.PNG?raw=true)
 
 
 <hr />
@@ -59,15 +61,20 @@ The year 2000 is a leap year!
 ## Problem 3: Perfect Sequence
 
 #### Problem Statement
-Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No"
+Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No".
+
+The console will ask "the user" to enter the first integer.
+The console will ask "the user" to then enter a second integer.
+The console will ask "the user" to either enter another integer or press ENTER if done entering integers.
+The user may enter as many integers as the user want.
+The console will display the numbers entered in an array and calculate if the numbers entered are a perfect sequence.  Explanation of perfect sequence below :arrow_down:.
 
 #### Perfect Sequences
 A perfect sequence is a sequence such that all of its elements are non-negative integers and the product of all of them is equal to their sum. 
-For example: [2,2], [1,3,2] and [0,0,0,0] are perfect sequences and [4,5,6] and [0,2,-2] are not perfect sequences. Negative numbers of any kind are not valid in 
-a perfect sequence
-
-#### Input Format
-An array of integers (may not be sorted)
+For example: [2,2], [1,3,2] and [0,0,0,0] are perfect sequences and [4,5,6] and [0,2,-2] are not perfect sequences. Negative numbers of any kind are not valid in a perfect sequence.
+#### Explanation
+1 * 3 * 2 = 6 && 1 + 3 + 2 = 6
+4 * 5 = 20 && 4 + 5 = 9
 
 #### Sample Input
 [1,3,2]
@@ -75,15 +82,9 @@ An array of integers (may not be sorted)
 #### Sample Output
 Yes
 
-#### Explanation
-1 * 3 * 2 = 6 && 1 + 3 + 2 = 6
-
-#### Readme
-A section of your readme should contain basic information outlining the requirements for the challenge
-1. Name of Challenge
-2. Instructions of Challenge
-3. Screen capture of successful output. 
-
+##### Screen capture of successful output.
+![](ScreenShots/Capture3_1.PNG?raw=true)
+![](ScreenShots/Capture3_2.PNG?raw=true)
 
 <hr />
 
