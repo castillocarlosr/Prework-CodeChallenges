@@ -138,21 +138,34 @@ namespace CodeChallenges
             Console.WriteLine(" ");
             Console.Write("Enter the first interger: ");
             string input = Console.ReadLine();
-            int typed = int.Parse(input);
-            userSequence.Add(typed);
-
-            while (input != "")
+            userSequence.Add(int.Parse(input));
+            //while (input != "")
+            while (!string.IsNullOrEmpty(input))
             {
                 Console.Write("Please enter another integer or press ENTER when done:  ");
                 input = Console.ReadLine();
+                int value;
+                if(!int.TryParse(input, out value))
+                {
+                    Console.WriteLine("Something went wrong.  Did you type in a number?");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    userSequence.Add(value);
+                }
+                //userSequence.Add(int.TryParse(input, out value));
                 //userSequence.Add(int.Parse(input));
-                userSequence.Add(typed);
             }
             if (input == "")
             {
-                Console.WriteLine("The numer enter is " + userSequence<int>);
+                //int sum = 0;
+                foreach (int value in userSequence)
+                {
+                    //sum += value;
+                    Console.WriteLine("The numbers entered are" + value.ToString() + " cool");
+                }
                 Console.ReadLine();
-                
             }
             /*
             Console.Write("How many numbers do you want to enter?  ");
