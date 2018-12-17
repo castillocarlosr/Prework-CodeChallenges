@@ -100,6 +100,10 @@ a multidimensional array with the dimensions of **m x n** (m = rows, n = columns
 2. Negative numbers are possible
 3. both **m** and **n** can vary in length
 
+The user should specify the length and the width of the array within the console. To populate the numbers, you may randomly generate them, or have the user input one by one.
+
+***The method should take in the multidimensional array and return the single dimensional array with the sums***
+
 #### Sample Input
 ```csharp
 int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
@@ -109,7 +113,7 @@ int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12
 
 #### Sample Output
 
-{10,40,65} <-- an integer array
+{15,40,65} <-- an integer array
 
 #### HINTS
 - for loops are your best friend
@@ -122,4 +126,4 @@ int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12
 A section of your readme should contain basic information outlining the requirements for the challenge
 1. Name of Challenge
 2. Instructions of Challenge
-3. Screen capture of successful output. 
+3. Screen capture of successful output.
