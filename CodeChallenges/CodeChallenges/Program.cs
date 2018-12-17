@@ -177,8 +177,15 @@ namespace CodeChallenges
         {
             //Write in some code block here -love carlos
             Console.Clear();
-            Console.WriteLine("Test code 4.  Yup, this is only a test");
-            Console.ReadLine();
+            Console.WriteLine("Problem 4:  Sum of Rows.");
+            Console.WriteLine("");
+            Console.Write("Enter the number of ROWS you want:  ");
+            string rows = Console.ReadLine();
+
+            Console.Write("Enter the number of COLUMNS you want:  ");
+            string columns = Console.ReadLine();
+
+            //multidimensional array code goes here
         }
 
         private static void OtherKeyPressed()
