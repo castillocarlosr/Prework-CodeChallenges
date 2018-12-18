@@ -186,23 +186,32 @@ namespace CodeChallenges
             int columns = int.Parse(Console.ReadLine());
 
             //multidimensional array
-            int[,] matrix = new int[rows, columns];
-            //Random rnd = new Random();
-
+            /*test array below
             int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+            */
+            int[,] myArray = new int[rows, columns];
+            Random rnd = new Random();
+            for (int k = 0; k< myArray.GetLength(0); k++)
+            {
+                for(int l = 0; l< myArray.GetLength(1); l++)
+                {
+                    myArray[k,l] = rnd.Next(0, 99);
+                }
+            }
+
             //int sum = 0;
             int[] rowSum = new int[myArray.GetLength(0)];
-            for (int l=0; l< myArray.GetLength(0); l++)
+            for (int m=0; m< myArray.GetLength(0); m++)
             {
-                rowSum[l] = 0;
-                for(int m = 0; m< myArray.GetLength(1); m++)
+                rowSum[m] = 0;
+                for(int n = 0; n< myArray.GetLength(1); n++)
                 {
-                    //sum += someNums[k,j];
-                    rowSum[l] += myArray[l, m];
+                    rowSum[m] += myArray[m, n];
                 }
             }
             //Console.WriteLine("The sum is: ", sum);
-            Console.WriteLine($"The sum is: {string.Join(",", rowSum)}");
+            Console.WriteLine($"The random generated integers in the array are as follows:");
+            Console.WriteLine($"The sum is: [{string.Join(", ", rowSum)}]");
             Console.ReadLine();
         }
 
