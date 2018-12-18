@@ -175,17 +175,35 @@ namespace CodeChallenges
 
         private static void SumofRows()
         {
-            //Write in some code block here -love carlos
+            //Working Progress..... -love carlos
             Console.Clear();
             Console.WriteLine("Problem 4:  Sum of Rows.");
             Console.WriteLine("");
             Console.Write("Enter the number of ROWS you want:  ");
-            string rows = Console.ReadLine();
+            int rows = int.Parse(Console.ReadLine());
 
             Console.Write("Enter the number of COLUMNS you want:  ");
-            string columns = Console.ReadLine();
+            int columns = int.Parse(Console.ReadLine());
 
-            //multidimensional array code goes here
+            //multidimensional array
+            int[,] matrix = new int[rows, columns];
+            //Random rnd = new Random();
+
+            int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+            //int sum = 0;
+            int[] rowSum = new int[myArray.GetLength(0)];
+            for (int l=0; l< myArray.GetLength(0); l++)
+            {
+                rowSum[l] = 0;
+                for(int m = 0; m< myArray.GetLength(1); m++)
+                {
+                    //sum += someNums[k,j];
+                    rowSum[l] += myArray[l, m];
+                }
+            }
+            //Console.WriteLine("The sum is: ", sum);
+            Console.WriteLine($"The sum is: {string.Join(",", rowSum)}");
+            Console.ReadLine();
         }
 
         private static void OtherKeyPressed()
