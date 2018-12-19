@@ -175,7 +175,6 @@ namespace CodeChallenges
 
         private static void SumofRows()
         {
-            //Working Progress..... -love carlos
             Console.Clear();
             Console.WriteLine("Problem 4:  Sum of Rows.");
             Console.WriteLine("");
@@ -185,7 +184,6 @@ namespace CodeChallenges
             Console.Write("Enter the number of COLUMNS you want:  ");
             int columns = int.Parse(Console.ReadLine());
 
-            //multidimensional array
             /*test array below
             int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
             */
@@ -195,11 +193,11 @@ namespace CodeChallenges
             {
                 for(int l = 0; l< myArray.GetLength(1); l++)
                 {
-                    myArray[k,l] = rnd.Next(0, 99);
+                    myArray[k,l] = rnd.Next(-99, 99);
                 }
             }
 
-            //int sum = 0;
+            //This is the math addition for the rows.  Display code at the bottom.
             int[] rowSum = new int[myArray.GetLength(0)];
             for (int m=0; m< myArray.GetLength(0); m++)
             {
@@ -209,10 +207,30 @@ namespace CodeChallenges
                     rowSum[m] += myArray[m, n];
                 }
             }
-            //Console.WriteLine("The sum is: ", sum);
+            //Display the random generated array
             Console.WriteLine($"The random generated integers in the array are as follows:");
+            for (int o = 0; o< myArray.GetLength(0); o++)
+            {
+                Console.Write("[ ");
+                for (int p = 0; p< myArray.GetLength(1); p++)
+                {
+                    //Console.Write($"{myArray[o, p]} ");
+                    //string str = (Convert.ToString(myArray[o,p]) + ", ");
+                    Console.Write(myArray[o, p] + " ");
+                    
+                    //Console.Write(str.Replace(" ", ","));
+
+                /* I want to not have the last comma show up when myAraay[o,p] + "," is displayed in console
+                  I dont know how to go about this. */
+                }
+                Console.Write("]");
+                Console.Write(Environment.NewLine);
+            }
+            Console.WriteLine(" ");
+            //Display the result for the math addition above
             Console.WriteLine($"The sum is: [{string.Join(", ", rowSum)}]");
             Console.ReadLine();
+            /* Problem 4 works.  Code block finished on Dec. 19 by Carlos Castillo */
         }
 
         private static void OtherKeyPressed()
