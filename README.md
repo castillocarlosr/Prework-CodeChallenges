@@ -10,8 +10,8 @@ file. Utilize the `Main()` method to call each challenge method, you may create 
 #### Problem Statement
 Given an array select a number that exists, and output the computated "score". The method will take in both an array of integers and the integer "you" the user selected.
 
--The console will ask you "the user" for 5 numbers between 1-10.  Press enter when done.
--The console will now ask the user for another number from the list.  Press enter.
+-The console will ask you "the user" for 5 numbers between 1-10.  Press enter when done. 
+-The console will now ask the user for another number from the list.  Press enter. 
 
 #### Selection and Scoring Algorithm
 The scoring will be depend on the frequency of the number the user selected and check the frequency of that number to the list of the first 5 numbers the user selected. 
@@ -41,8 +41,8 @@ on every year that is evenly divisible by 4
     unless the year is also evenly divisible by 400
 ```
 
--The console will ask "the user" to enter a year.  Press enter when done.
--The console will display the year the user entered and whether it is a leap year or not.
+-The console will ask "the user" to enter a year.  Press enter when done. 
+-The console will display the year the user entered and whether it is a leap year or not. 
 
 #### Sample Input
 2008
@@ -51,7 +51,6 @@ on every year that is evenly divisible by 4
 The year 2008 is a leap year!
 
 ##### Screen capture of successful output.
-<!-- ![](ScreenShots/Capture2.PNG?raw=true) -->
 ![](ScreenShots/Capture2_1.PNG?raw=true)
 ![](ScreenShots/Capture2_2.PNG?raw=true)
 
@@ -63,12 +62,12 @@ The year 2008 is a leap year!
 #### Problem Statement
 Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No".
 
--The console will ask "the user" to enter the first integer.
--The console will ask "the user" to then enter a second integer.
--The console will ask "the user" to either enter another integer or press ENTER if done entering integers.
--The user may enter as many integers as the user want.
--The console will display the numbers entered in an array and calculate if the numbers entered are a perfect sequence.  
---Explanation of perfect sequence below :arrow_down:.
+-The console will ask "the user" to enter the first integer. 
+-The console will ask "the user" to then enter a second integer. 
+-The console will ask "the user" to either enter another integer or press ENTER if done entering integers. 
+-The user may enter as many integers as the user want. 
+-The console will display the numbers entered in an array and calculate if the numbers entered are a perfect sequence.   
+--Explanation of perfect sequence below :arrow_down:. 
 
 #### Perfect Sequences
 A perfect sequence is a sequence such that all of its elements are non-negative integers and the product of all of them is equal to their sum. 
@@ -94,12 +93,12 @@ Yes
 #### Problem Statement
 Given a matrix of integers. Return the sum of each row in a single dimensional array. 
 
--The console will ask "the user" to enter the number of rows the user wants.
--The console will ask "the user" to enter the number of columns the user wants.
+-The console will ask "the user" to enter the number of rows the user wants. 
+-The console will ask "the user" to enter the number of columns the user wants. 
 
--The console will display a 2-D array with the number of rows and columns entered.
--The integers will be randomly be generated from negative 99 to positive 99.
--The console will display the results on the next line.
+-The console will display a 2-D array with the number of rows and columns entered. 
+-The integers will be randomly be generated from negative 99 to positive 99. 
+-The console will display the results on the next line. 
 
 #### Sample Input
 ```csharp
