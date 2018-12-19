@@ -10,8 +10,8 @@ file. Utilize the `Main()` method to call each challenge method, you may create 
 #### Problem Statement
 Given an array select a number that exists, and output the computated "score". The method will take in both an array of integers and the integer "you" the user selected.
 
-The console will ask you "the user" for 5 numbers between 1-10.  Press enter when done.
-The console will now ask the user for another number from the list.  Press enter.
+-The console will ask you "the user" for 5 numbers between 1-10.  Press enter when done.
+-The console will now ask the user for another number from the list.  Press enter.
 
 #### Selection and Scoring Algorithm
 The scoring will be depend on the frequency of the number the user selected and check the frequency of that number to the list of the first 5 numbers the user selected. 
@@ -41,14 +41,14 @@ on every year that is evenly divisible by 4
     unless the year is also evenly divisible by 400
 ```
 
-The console will ask "the user" to enter a year.  Press enter when done.
-The console will display the year the user entered and whether it is a leap year or not.
+-The console will ask "the user" to enter a year.  Press enter when done.
+-The console will display the year the user entered and whether it is a leap year or not.
 
 #### Sample Input
-2000
+2008
 
 #### Sample Output
-The year 2000 is a leap year!
+The year 2008 is a leap year!
 
 ##### Screen capture of successful output.
 <!-- ![](ScreenShots/Capture2.PNG?raw=true) -->
@@ -63,11 +63,12 @@ The year 2000 is a leap year!
 #### Problem Statement
 Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No".
 
-The console will ask "the user" to enter the first integer.
-The console will ask "the user" to then enter a second integer.
-The console will ask "the user" to either enter another integer or press ENTER if done entering integers.
-The user may enter as many integers as the user want.
-The console will display the numbers entered in an array and calculate if the numbers entered are a perfect sequence.  Explanation of perfect sequence below :arrow_down:.
+-The console will ask "the user" to enter the first integer.
+-The console will ask "the user" to then enter a second integer.
+-The console will ask "the user" to either enter another integer or press ENTER if done entering integers.
+-The user may enter as many integers as the user want.
+-The console will display the numbers entered in an array and calculate if the numbers entered are a perfect sequence.  
+--Explanation of perfect sequence below :arrow_down:.
 
 #### Perfect Sequences
 A perfect sequence is a sequence such that all of its elements are non-negative integers and the product of all of them is equal to their sum. 
@@ -93,37 +94,20 @@ Yes
 #### Problem Statement
 Given a matrix of integers. Return the sum of each row in a single dimensional array. 
 
-#### Input Format
-a multidimensional array with the dimensions of **m x n** (m = rows, n = columns).
+-The console will ask "the user" to enter the number of rows the user wants.
+-The console will ask "the user" to enter the number of columns the user wants.
 
-1. duplicate integers are possible.
-2. Negative numbers are possible
-3. both **m** and **n** can vary in length
-
-The user should specify the length and the width of the array within the console. To populate the numbers, you may randomly generate them, or have the user input one by one.
-
-***The method should take in the multidimensional array and return the single dimensional array with the sums***
+-The console will display a 2-D array with the number of rows and columns entered.
+-The integers will be randomly be generated from negative 99 to positive 99.
+-The console will display the results on the next line.
 
 #### Sample Input
 ```csharp
 int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
 ```
-
-^^ The actual input would just be `myArray`, but the above code shows the pre-initialization before the method is called. 
-
 #### Sample Output
 
 {15,40,65} <-- an integer array
 
-#### HINTS
-- for loops are your best friend
-- GetLength() is a method you should look into
-	- i.e. in the array above myArray.GetLength(0) is equal to 3
-	- myArray.GetLength(1) is equal to 5
-	
-
-#### Readme
-A section of your readme should contain basic information outlining the requirements for the challenge
-1. Name of Challenge
-2. Instructions of Challenge
-3. Screen capture of successful output.
+##### Screen capture of successful output.
+![](ScreenShots/Capture4_1.PNG?raw=true)
