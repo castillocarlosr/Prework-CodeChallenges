@@ -221,7 +221,7 @@ namespace CodeChallenges
                     //Console.Write(str.Replace(" ", ","));
 
                 /* I want to not have the last comma show up when myAraay[o,p] + "," is displayed in console
-                  I dont know how to go about this. */
+                  I dont know how to go about this.  Will look into this*/
                 }
                 Console.Write("]");
                 Console.Write(Environment.NewLine);
