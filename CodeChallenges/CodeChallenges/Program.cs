@@ -20,6 +20,7 @@ namespace CodeChallenges
 
         private static bool MainMenu()
         {
+            Console.ResetColor();
             Console.Clear();
             Console.WriteLine("Code Challenges Program.  Choose a number problem.");
             Console.WriteLine("   ");
@@ -67,32 +68,29 @@ namespace CodeChallenges
             Console.WriteLine("Problem 1: Array Max Result");
             Console.WriteLine("Choose 5 numbers between 1-10");
             //ArrayList userList = new ArrayList();
-            List<int> userList = new List<int>();
-            //int[]userList = new int[5];
+            //List<int> userList = new List<int>();
+            int[]userList = new int[5];
 
+            #region Choosing 5 numbers
             Console.WriteLine("   ");
             Console.Write("Choose the first number:  ");
-            string result = Console.ReadLine();
-            userList.Add(int.Parse(result));
+            userList[0] = int.Parse(Console.ReadLine());
             Console.Write("Choose the second number: ");
-            string result2 = Console.ReadLine();
-            userList.Add(int.Parse(result2));
+            userList[1] = int.Parse(Console.ReadLine());
             Console.Write("Choose the third number:  ");
-            string result3 = Console.ReadLine();
-            userList.Add(int.Parse(result3));
+            userList[2] = int.Parse(Console.ReadLine());
             Console.Write("Choose the forth number:  ");
-            string result4 = Console.ReadLine();
-            userList.Add(int.Parse(result4));
+            userList[3] = int.Parse(Console.ReadLine());
             Console.Write("Choose the fifth number:  ");
-            string result5 = Console.ReadLine();
-            userList.Add(int.Parse(result5));
-            
+            userList[4] = int.Parse(Console.ReadLine());
+            #endregion
+
             Console.Write($"Choose number from the list: [{userList[0]}, {userList[1]}, {userList[2]}, {userList[3]}, {userList[4]}]:  ");
             string score = Console.ReadLine();
             
             int i = 0;
             int frequency = 0;
-            for(i = 0; i<userList.Count; i++)
+            for(i = 0; i<userList.Length; i++)
             {
                 if (int.Parse(score) == userList[i])
                     ++frequency;
@@ -236,6 +234,7 @@ namespace CodeChallenges
         private static void OtherKeyPressed()
         {
             Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Red;
             Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, 3, 4, or 5.");
             Console.ReadLine();
         }
