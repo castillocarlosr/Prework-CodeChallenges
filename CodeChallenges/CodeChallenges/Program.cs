@@ -23,7 +23,7 @@ namespace CodeChallenges
             Console.ResetColor();
             Console.Clear();
             Console.WriteLine("Code Challenges Program.  Choose a number problem.");
-            Console.WriteLine("   ");
+            Console.WriteLine(" ");
             Console.WriteLine("1) Problem 1: Array Max Result");
             Console.WriteLine("2) Problem 2: Leap Year Calculator");
             Console.WriteLine("3) Problem 3: Perfect Sequence");
@@ -67,8 +67,6 @@ namespace CodeChallenges
             Console.Clear();
             Console.WriteLine("Problem 1: Array Max Result");
             Console.WriteLine("Choose 5 numbers between 1-10");
-            //ArrayList userList = new ArrayList();
-            //List<int> userList = new List<int>();
             int[]userList = new int[5];
 
             #region Choosing 5 numbers
@@ -96,6 +94,7 @@ namespace CodeChallenges
                     ++frequency;
             }
             int solution1 = frequency * int.Parse(score);
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Score:  {solution1}");
             Console.ReadLine();
             /* Problem 1 works.  Code block finished on Dec. 10 by Carlos Castillo */
@@ -104,6 +103,7 @@ namespace CodeChallenges
         private static void LeapYearCalculator()
         {
             Console.Clear();
+            Console.ResetColor();
             Console.WriteLine("Problem 2: Leap Year Calculator.");
             Console.WriteLine(" ");
             Console.Write("Choose a year:  ");
@@ -163,8 +163,6 @@ namespace CodeChallenges
                     else
                     {
                         Console.WriteLine("NO.  Not a perfect sequence.");
-                        //Console.WriteLine($"sum: {sum}");
-                        //Console.WriteLine($"product: {product}");
                     }
                 Console.ReadLine();
             }
@@ -226,6 +224,7 @@ namespace CodeChallenges
             }
             Console.WriteLine(" ");
             //Display the result for the math addition above
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"The sum is: [{string.Join(", ", rowSum)}]");
             Console.ReadLine();
             /* Problem 4 works.  Code block finished on Dec. 19 by Carlos Castillo */
@@ -234,7 +233,7 @@ namespace CodeChallenges
         private static void OtherKeyPressed()
         {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, 3, 4, or 5.");
             Console.ReadLine();
         }
