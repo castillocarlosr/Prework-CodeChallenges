@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodeChallenges
 {
@@ -18,6 +15,7 @@ namespace CodeChallenges
             }
         }
 
+        #region Main Screen
         private static bool MainMenu()
         {
             Console.ResetColor();
@@ -61,7 +59,9 @@ namespace CodeChallenges
                 return true;
             }
         }
+        #endregion
 
+        #region Problem 1:  Array Max Result
         private static void ArrayMaxResult()
         {
             Console.Clear();
@@ -69,7 +69,6 @@ namespace CodeChallenges
             Console.WriteLine("Choose 5 numbers between 1-10");
             int[]userList = new int[5];
 
-            #region Choosing 5 numbers
             Console.WriteLine("   ");
             Console.Write("Choose the first number:  ");
             userList[0] = int.Parse(Console.ReadLine());
@@ -81,7 +80,6 @@ namespace CodeChallenges
             userList[3] = int.Parse(Console.ReadLine());
             Console.Write("Choose the fifth number:  ");
             userList[4] = int.Parse(Console.ReadLine());
-            #endregion
 
             Console.Write($"Choose number from the list: [{userList[0]}, {userList[1]}, {userList[2]}, {userList[3]}, {userList[4]}]:  ");
             string score = Console.ReadLine();
@@ -97,9 +95,11 @@ namespace CodeChallenges
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Score:  {solution1}");
             Console.ReadLine();
-            /* Problem 1 works.  Code block finished on Dec. 10 by Carlos Castillo */
+            /* Problem 1 works.  Functional code block finished on Dec. 10 by Carlos Castillo */
         }
+        #endregion
 
+        #region Problem 2: Leap Year Calculator
         private static void LeapYearCalculator()
         {
             Console.Clear();
@@ -124,9 +124,11 @@ namespace CodeChallenges
             else
                 Console.WriteLine($"The year {userYear} is NOT a leap year.");
             Console.ReadLine();
-            /* Problem 2 works.  Code block finished on Dec. 11 by Carlos Castillo */
+            /* Problem 2 works.  Functional code block finished on Dec. 11 by Carlos Castillo */
         }
-        
+        #endregion
+
+        #region Problem 3: Perfect Sequence
         private static void PerfectSequence()
         {
             Console.Clear();
@@ -134,7 +136,7 @@ namespace CodeChallenges
             List<int> userSequence = new List<int>();
 
             Console.WriteLine(" ");
-            Console.Write("Enter the first interger: ");
+            Console.Write("Enter the first interger:  ");
             string input = Console.ReadLine();
             //while (input != "")
             while (!string.IsNullOrEmpty(input))
@@ -158,17 +160,21 @@ namespace CodeChallenges
                 }
                     if(sum == product)
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("YES.  Perfect sequence.");
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("NO.  Not a perfect sequence.");
                     }
                 Console.ReadLine();
             }
-            /* Problem 3 works.  Code block finished on Dec. 13 by Carlos Castillo */
+            /* Problem 3 works.  Functional code block finished on Dec. 13 by Carlos Castillo */
         }
+        #endregion
 
+        #region Problem 4: Sum of Rows
         private static void SumofRows()
         {
             Console.Clear();
@@ -193,7 +199,7 @@ namespace CodeChallenges
                 }
             }
 
-            //This is the math addition for the rows.  Display code at the bottom.
+            //This is the math addition for the rows.  Display result code at the bottom.
             int[] rowSum = new int[myArray.GetLength(0)];
             for (int m=0; m< myArray.GetLength(0); m++)
             {
@@ -210,14 +216,7 @@ namespace CodeChallenges
                 Console.Write("[ ");
                 for (int p = 0; p< myArray.GetLength(1); p++)
                 {
-                    //Console.Write($"{myArray[o, p]} ");
-                    //string str = (Convert.ToString(myArray[o,p]) + ", ");
                     Console.Write(myArray[o, p] + " ");
-                    
-                    //Console.Write(str.Replace(" ", ","));
-
-                /* I want to not have the last comma show up when myAraay[o,p] + "," is displayed in console
-                  I dont know how to go about this.  Will look into this*/
                 }
                 Console.Write("]");
                 Console.Write(Environment.NewLine);
@@ -227,8 +226,9 @@ namespace CodeChallenges
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"The sum is: [{string.Join(", ", rowSum)}]");
             Console.ReadLine();
-            /* Problem 4 works.  Code block finished on Dec. 19 by Carlos Castillo */
+            /* Problem 4 works.  Functional code block finished on Dec. 19 by Carlos Castillo */
         }
+        #endregion
 
         private static void OtherKeyPressed()
         {
@@ -237,7 +237,8 @@ namespace CodeChallenges
             Console.WriteLine("Oh no.....Looks like you didn't type 1, 2, 3, 4, or 5.");
             Console.ReadLine();
         }
-
-
     }
 }
+/* Code given one last review before submitting on Dec. 30, 2018. Made small changes and reduced a few lines of code.
+ * The only hicup was I couldn't get Problem 2 answers to display in green properly.  
+ * Not a requirement so I'll push forward to reading ahead and coaching assignements.  */
